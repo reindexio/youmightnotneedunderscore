@@ -98,20 +98,6 @@
   array.filter(x => !!x)
   ```
 
-#### Create a copy of an array with all falsy values removed.
-
-* Underscore
-
-  ```javascript
-  _.compact(array)
-  ```
-
-* ES2015
-
-  ```javascript
-  array.filter(x => !!x)
-  ```
-
 #### Create a copy of an array with duplicates removed
 
 * Underscore

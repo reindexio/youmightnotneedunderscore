@@ -323,7 +323,7 @@
 * Underscore
 
   ```javascript
-  _.noop()
+  _.noop
   ```
 
 * ES2015

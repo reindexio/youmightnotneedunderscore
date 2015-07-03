@@ -1,5 +1,18 @@
 ### Arrays
 
+#### First
+
+* Underscore
+  ```javascript
+  _.first([5, 4, 3, 2, 1]);
+  ```
+
+* ES2015
+
+  ```javascript
+  const [n] = [5, 4, 3, 2, 1];
+  ```
+
 #### Iterate
 
 * Underscore
@@ -26,6 +39,48 @@
 
   ```javascript
   array.map(iteratee)
+  ```
+
+#### ReduceRight
+
+*  Underscore
+
+  ```javascript
+  _.reduceRight(array, iteratee)
+  ```
+
+*  ES5.1
+
+  ```javascript
+  array.reduceRight(iteratee)
+  ```
+
+#### Every
+
+*  Underscore
+
+  ```javascript
+  _.every(array, predicate)
+  ```
+
+*  ES5.1
+
+  ```javascript
+  array.every(predicate)
+  ```
+
+#### Some
+
+*  Underscore
+
+  ```javascript
+  _.some(array, predicate)
+  ```
+
+*  ES5.1
+
+  ```javascript
+  array.some(predicate)
   ```
 
 #### Find
@@ -126,6 +181,20 @@
   array.indexOf(value)
   ```
 
+#### Find the index in an array by predicate
+
+* Underscore
+
+  ```javascript
+  _.findIndex([4, 6, 7, 12], isPrime);
+  ```
+
+* ES2015
+
+  ```javascript
+  [4, 6, 7, 12].findIndex(isPrime);
+  ```
+
 #### Create an array with n numbers, starting from x
 
 * Underscore
@@ -154,6 +223,20 @@
 
   ```javascript
   Object.keys(object)
+  ```
+
+#### Size
+
+* Underscore
+
+  ```javascript
+  _.size(object)
+  ```
+
+* ES5.1
+
+  ```javascript
+  Object.keys(object).length
   ```
 
 #### Names of all enumerable properties
@@ -204,6 +287,12 @@
 
   ```javascript
   _.extend({}, source, { a: false })
+  ```
+
+* ES2015
+
+  ```javascript
+  Object.assign({}, source, { a: false });
   ```
 
 * ES2016
@@ -330,4 +419,34 @@
 
   ```javascript
   () => {}
+  ```
+
+#### Now
+
+* Underscore
+
+  ```javascript
+  _.now()
+  ```
+
+* ES5.1
+
+  ```javascript
+  Date.now()
+  ```
+
+#### Template
+
+* Underscore
+
+  ```javascript
+  _.template("hello: <%= name %>");
+  compiled({name: 'moe'});
+  ```
+
+* ES2015
+
+  ```javascript
+  const name = 'moe';
+  `hello ${name}`
   ```

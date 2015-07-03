@@ -183,6 +183,12 @@
   ```javascript
   Object.keys(object).map(key => object[key])
   ```
+  
+ * ES2016
+
+  ```javascript
+  Object.values(object)
+  ```
 
 #### Create a new object with the given prototype
 

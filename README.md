@@ -1,19 +1,5 @@
 ### Arrays
 
-#### First
-
-* Underscore
-  ```javascript
-  _.first([5, 4, 3, 2, 1]);
-  ```
-
-* ES2015
-
-  ```javascript
-  const first = ([n]) => n;
-  first([5, 4, 3, 2, 1]);
-  ```
-
 #### Iterate
 
 * Underscore
@@ -42,7 +28,7 @@
   array.map(iteratee)
   ```
 
-#### Use a predicate to accumulate a single value from an array (left-to-right)
+#### Use a function to accumulate a single value from an array (left-to-right)
 
 *  Underscore
 
@@ -57,7 +43,7 @@
   ```
 
 
-#### Use a predicate to accumulate a single value from an array (right-to-left)
+#### Use a function to accumulate a single value from an array (right-to-left)
 
 *  Underscore
 

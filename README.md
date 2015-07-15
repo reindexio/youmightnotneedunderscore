@@ -142,7 +142,7 @@
 
 ### Objects
 
-#### Names of own enumerable properties
+#### Names of own enumerable properties as an array
 
 * Underscore
 
@@ -156,7 +156,7 @@
   Object.keys(object)
   ```
 
-#### Names of all enumerable properties
+#### Names of all enumerable properties as an array
 
 * Underscore
 
@@ -167,7 +167,7 @@
 * ES2015
 
   ```javascript
-  Reflect.enumerate(object)  // Returns an Iterator
+  [...Reflect.enumerate(object)]
   ```
 
 #### Values

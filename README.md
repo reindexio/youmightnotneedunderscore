@@ -206,6 +206,12 @@
   _.extend({}, source, { a: false })
   ```
 
+* ES2015
+
+  ```javascript
+  Object.assign({}, source, { a: false })
+  ```
+
 * ES2016
 
   ```javascript

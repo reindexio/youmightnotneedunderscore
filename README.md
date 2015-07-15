@@ -198,12 +198,12 @@
   Object.assign(Object.create(proto), properties)
   ```
 
-#### Create a new object from merged properties
+#### Create a new object from merged own properties
 
 * Underscore
 
   ```javascript
-  _.extend({}, source, { a: false })
+  _.extendOwn({}, source, { a: false })
   ```
 
 * ES2015

@@ -10,7 +10,8 @@
 * ES2015
 
   ```javascript
-  const [n] = [5, 4, 3, 2, 1];
+  const first = ([n]) => n;
+  first([5, 4, 3, 2, 1]);
   ```
 
 #### Iterate
@@ -41,7 +42,7 @@
   array.map(iteratee)
   ```
 
-#### ReduceRight
+#### Use a predicate to accumulate a single value from an array (from right-to-left)
 
 *  Underscore
 
@@ -225,7 +226,7 @@
   Object.keys(object)
   ```
 
-#### Size
+#### Number of keys in an object
 
 * Underscore
 

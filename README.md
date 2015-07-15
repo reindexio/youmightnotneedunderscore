@@ -61,7 +61,7 @@
 * Underscore
 
   ```javascript
-  _.contains(array, element)
+  _.includes(array, element)
   ```
 
 * ES2016

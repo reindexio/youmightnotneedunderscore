@@ -184,18 +184,18 @@
   Object.keys(object).map(key => object[key])
   ```
 
-#### Create a new object with the given prototype
+#### Create a new object with the given prototype and properties
 
 * Underscore
 
   ```javascript
-  _.create(proto, propertiesObject)
+  _.create(proto, properties)
   ```
 
-* ES5.1
+* ES2015
 
   ```javascript
-  Object.create(proto, propertiesObject)
+  Object.assign(Object.create(proto), properties)
   ```
 
 #### Create a new object from merged properties

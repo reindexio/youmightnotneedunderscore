@@ -251,7 +251,7 @@
 * Underscore
 
   ```javascript
-  _.isFinite(object)
+  _.isNumber(object) && _.isFinite(object)
   ```
 
 * ES2015

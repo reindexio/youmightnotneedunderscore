@@ -267,9 +267,9 @@
 * Underscore
 
   ```javascript
-  foo(function () {
+  foo(_.bind(function () {
     this.bar();
-  }.bind(this));
+  }, this));
 
   foo(_.bind(object.fun, object));
   ```

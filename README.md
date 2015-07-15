@@ -42,18 +42,33 @@
   array.map(iteratee)
   ```
 
-#### Use a predicate to accumulate a single value from an array (from right-to-left)
+#### Use a predicate to accumulate a single value from an array (left-to-right)
 
 *  Underscore
 
   ```javascript
-  _.reduceRight(array, iteratee)
+  _.reduce(array, iteratee, memo)
   ```
 
 *  ES5.1
 
   ```javascript
-  array.reduceRight(iteratee)
+  array.reduce(iteratee, memo)
+  ```
+
+
+#### Use a predicate to accumulate a single value from an array (right-to-left)
+
+*  Underscore
+
+  ```javascript
+  _.reduceRight(array, iteratee, memo)
+  ```
+
+*  ES5.1
+
+  ```javascript
+  array.reduceRight(iteratee, memo)
   ```
 
 #### Every
@@ -441,13 +456,13 @@
 * Underscore
 
   ```javascript
-  _.template("hello: <%= name %>");
-  compiled({name: 'moe'});
+  var greeting = _.template("hello <%= name %>");
+  greeting({ name: 'moe' });
   ```
 
 * ES2015
 
   ```javascript
-  const name = 'moe';
-  `hello ${name}`
+  const greeting = ({ name }) => `hello ${name}`;
+  greeting({ name: 'moe' });
   ```

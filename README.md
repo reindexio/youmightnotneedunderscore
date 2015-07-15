@@ -203,7 +203,7 @@
 * Underscore
 
   ```javascript
-  _.extendOwn({}, source, { a: false })
+  _.assign({}, source, { a: false })
   ```
 
 * ES2015

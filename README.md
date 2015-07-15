@@ -218,12 +218,12 @@
   { ...source, a: false }
   ```
 
-#### Create a shallow clone of an object
+#### Create a shallow clone of own properties of an object
 
 * Underscore
 
   ```javascript
-  _.clone(object)
+  _.extendOwn({}, object)
   ```
 
 * ES2016

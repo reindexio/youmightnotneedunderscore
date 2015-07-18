@@ -294,7 +294,7 @@
 * ES2015
 
   ```javascript
-  Object.assign({}, source, { a: false });
+  Object.assign({}, source, { a: false })
   ```
 
 * ES2016

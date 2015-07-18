@@ -118,7 +118,7 @@
 * Underscore
 
   ```javascript
-  _.contains(array, element)
+  _.includes(array, element)
   ```
 
 * ES2016
@@ -213,7 +213,7 @@
 
 ### Objects
 
-#### Names of own enumerable properties
+#### Names of own enumerable properties as an array
 
 * Underscore
 
@@ -241,7 +241,7 @@
   Object.keys(object).length
   ```
 
-#### Names of all enumerable properties
+#### Names of all enumerable properties as an array
 
 * Underscore
 
@@ -252,7 +252,7 @@
 * ES2015
 
   ```javascript
-  Reflect.enumerate(object)  // Returns an Iterator
+  [...Reflect.enumerate(object)]
   ```
 
 #### Values
@@ -269,26 +269,26 @@
   Object.keys(object).map(key => object[key])
   ```
 
-#### Create a new object with the given prototype
+#### Create a new object with the given prototype and properties
 
 * Underscore
 
   ```javascript
-  _.create(proto, propertiesObject)
+  _.create(proto, properties)
   ```
 
-* ES5.1
+* ES2015
 
   ```javascript
-  Object.create(proto, propertiesObject)
+  Object.assign(Object.create(proto), properties)
   ```
 
-#### Create a new object from merged properties
+#### Create a new object from merged own properties
 
 * Underscore
 
   ```javascript
-  _.extend({}, source, { a: false })
+  _.assign({}, source, { a: false })
   ```
 
 * ES2015
@@ -303,12 +303,12 @@
   { ...source, a: false }
   ```
 
-#### Create a shallow clone of an object
+#### Create a shallow clone of own properties of an object
 
 * Underscore
 
   ```javascript
-  _.clone(object)
+  _.extendOwn({}, object)
   ```
 
 * ES2016
@@ -336,7 +336,7 @@
 * Underscore
 
   ```javascript
-  _.isFinite(object)
+  _.isNumber(object) && _.isFinite(object)
   ```
 
 * ES2015
@@ -352,9 +352,9 @@
 * Underscore
 
   ```javascript
-  foo(function () {
+  foo(_.bind(function () {
     this.bar();
-  }.bind(this));
+  }, this));
 
   foo(_.bind(object.fun, object));
   ```

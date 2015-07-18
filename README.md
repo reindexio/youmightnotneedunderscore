@@ -28,6 +28,63 @@
   array.map(iteratee)
   ```
 
+#### Use a function to accumulate a single value from an array (left-to-right)
+
+*  Underscore
+
+  ```javascript
+  _.reduce(array, iteratee, memo)
+  ```
+
+*  ES5.1
+
+  ```javascript
+  array.reduce(iteratee, memo)
+  ```
+
+
+#### Use a function to accumulate a single value from an array (right-to-left)
+
+*  Underscore
+
+  ```javascript
+  _.reduceRight(array, iteratee, memo)
+  ```
+
+*  ES5.1
+
+  ```javascript
+  array.reduceRight(iteratee, memo)
+  ```
+
+#### Every
+
+*  Underscore
+
+  ```javascript
+  _.every(array, predicate)
+  ```
+
+*  ES5.1
+
+  ```javascript
+  array.every(predicate)
+  ```
+
+#### Some
+
+*  Underscore
+
+  ```javascript
+  _.some(array, predicate)
+  ```
+
+*  ES5.1
+
+  ```javascript
+  array.some(predicate)
+  ```
+
 #### Find
 
 * Underscore
@@ -126,6 +183,20 @@
   array.indexOf(value)
   ```
 
+#### Find the index in an array by predicate
+
+* Underscore
+
+  ```javascript
+  _.findIndex([4, 6, 7, 12], isPrime);
+  ```
+
+* ES2015
+
+  ```javascript
+  [4, 6, 7, 12].findIndex(isPrime);
+  ```
+
 #### Create an array with n numbers, starting from x
 
 * Underscore
@@ -154,6 +225,20 @@
 
   ```javascript
   Object.keys(object)
+  ```
+
+#### Number of keys in an object
+
+* Underscore
+
+  ```javascript
+  _.size(object)
+  ```
+
+* ES5.1
+
+  ```javascript
+  Object.keys(object).length
   ```
 
 #### Names of all enumerable properties as an array
@@ -336,4 +421,34 @@
 
   ```javascript
   () => {}
+  ```
+
+#### Now
+
+* Underscore
+
+  ```javascript
+  _.now()
+  ```
+
+* ES5.1
+
+  ```javascript
+  Date.now()
+  ```
+
+#### Template
+
+* Underscore
+
+  ```javascript
+  var greeting = _.template("hello <%= name %>");
+  greeting({ name: 'moe' });
+  ```
+
+* ES2015
+
+  ```javascript
+  const greeting = ({ name }) => `hello ${name}`;
+  greeting({ name: 'moe' });
   ```

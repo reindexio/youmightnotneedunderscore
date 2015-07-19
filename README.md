@@ -266,6 +266,12 @@
 * ES5.1
 
   ```javascript
+  Object.keys(object).map(function(key){ return object[key]; })
+  ```
+  
+* ES2015
+
+  ```javascript
   Object.keys(object).map(key => object[key])
   ```
 

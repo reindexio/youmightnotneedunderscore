@@ -16,13 +16,13 @@
 
 #### Map
 
-*  Underscore
+* Underscore
 
   ```javascript
   _.map(array, iteratee)
   ```
 
-*  ES5.1
+* ES5.1
 
   ```javascript
   array.map(iteratee)
@@ -30,13 +30,13 @@
 
 #### Use a function to accumulate a single value from an array (left-to-right)
 
-*  Underscore
+* Underscore
 
   ```javascript
   _.reduce(array, iteratee, memo)
   ```
 
-*  ES5.1
+* ES5.1
 
   ```javascript
   array.reduce(iteratee, memo)
@@ -45,47 +45,47 @@
 
 #### Use a function to accumulate a single value from an array (right-to-left)
 
-*  Underscore
+* Underscore
 
   ```javascript
   _.reduceRight(array, iteratee, memo)
   ```
 
-*  ES5.1
+* ES5.1
 
   ```javascript
   array.reduceRight(iteratee, memo)
   ```
 
-#### Every
+#### Test whether all elements in an array pass a predicate
 
-*  Underscore
+* Underscore
 
   ```javascript
   _.every(array, predicate)
   ```
 
-*  ES5.1
+* ES5.1
 
   ```javascript
   array.every(predicate)
   ```
 
-#### Some
+#### Test whether some element in an array passes a predicate
 
-*  Underscore
+* Underscore
 
   ```javascript
   _.some(array, predicate)
   ```
 
-*  ES5.1
+* ES5.1
 
   ```javascript
   array.some(predicate)
   ```
 
-#### Find
+#### Find a value in an array
 
 * Underscore
 
@@ -423,7 +423,7 @@
   () => {}
   ```
 
-#### Now
+#### Get the current time in milliseconds since the epoch
 
 * Underscore
 

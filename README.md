@@ -141,12 +141,18 @@
   Array.from(arguments)
   ```
 
-#### Create a copy of an array with all falsy values removed.
+#### Create a copy of an array with all falsy values removed
 
 * Underscore
 
   ```javascript
   _.compact(array)
+  ```
+
+* ES5.1
+
+  ```javascript
+  array.filter(Boolean)
   ```
 
 * ES2015

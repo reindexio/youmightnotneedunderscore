@@ -214,7 +214,7 @@
 * ES2015
 
   ```javascript
-  Array.from({ length: n }, (v, k) => k + x)
+  Array.from(Array(n), (v, k) => k + x)
   ```
 
 ### Objects

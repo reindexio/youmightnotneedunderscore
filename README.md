@@ -138,7 +138,7 @@
 * ES2015
 
   ```javascript
-  Array.from(arguments)
+  [...arguments]
   ```
 
 #### Create a copy of an array with all falsy values removed

@@ -406,13 +406,13 @@
 * Underscore
 
   ```javascript
-  const fun = _.constant(value);
+  _.constant(value)
   ```
 
 * ES2015
 
   ```javascript
-  const fun = () => value;
+  () => value
   ```
 
 #### The empty function

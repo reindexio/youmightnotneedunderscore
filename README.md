@@ -141,25 +141,25 @@
   [...arguments]
   ```
 
-#### Convert an object-like array to object
+#### Convert an array of keys and values to an object
 
 * Underscore
 
-    ```javascript
-    _.object(array)
-    ```
+  ```javascript
+  _.object(array)
+  ```
 
 * ES2015
 
-    ```javascript
-    array.reduce((result, [key, val]) => Object.assign(result, {[key]: val}), {})
-    ```
+  ```javascript
+  array.reduce((result, [key, val]) => Object.assign(result, {[key]: val}), {})
+  ```
 
-* ES2016
+* Object Rest/Spread (Stage 2)
 
-    ```javascript
-    array.reduce((result, [key, val]) => {...result, [key]: val}, {})
-    ```
+  ```javascript
+  array.reduce((result, [key, val]) => {...result, [key]: val}, {})
+  ```
 
 #### Create a copy of an array with all falsy values removed
 
@@ -323,7 +323,7 @@
   Object.assign({}, source, { a: false })
   ```
 
-* ES2016
+* Object Rest/Spread (Stage 2)
 
   ```javascript
   { ...source, a: false }
@@ -337,7 +337,7 @@
   _.extendOwn({}, object)
   ```
 
-* ES2016
+* Object Rest/Spread (Stage 2)
 
   ```javascript
   { ...object }
@@ -393,16 +393,6 @@
   });
 
   foo(object.fun.bind(object));
-  ```
-
-* ES2016
-
-  ```javascript
-  foo(() => {
-    this.bar();
-  });
-
-  foo(::object.fun);
   ```
 
 ### Utility

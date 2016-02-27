@@ -141,6 +141,26 @@
   [...arguments]
   ```
 
+#### Convert an object-like array to object
+
+* Underscore
+
+    ```javascript
+    _.object(array)
+    ```
+
+* ES2015
+
+    ```javascript
+    array.reduce((result, [key, val]) => Object.assign(result, {[key]: val}), {})
+    ```
+
+* ES2016
+
+    ```javascript
+    array.reduce((result, [key, val]) => {...result, [key]: val}, {})
+    ```
+
 #### Create a copy of an array with all falsy values removed
 
 * Underscore

@@ -392,7 +392,7 @@
     this.bar();
   });
 
-  foo(object.fun.bind(object));
+  foo(() => object.fun());
   ```
 
 ### Utility

@@ -178,7 +178,7 @@
 * ES2015
 
   ```javascript
-  array.filter(x => !!x)
+  array.filter(Boolean)
   ```
 
 #### Create a copy of an array with duplicates removed

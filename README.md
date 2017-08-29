@@ -295,6 +295,12 @@
   Object.keys(object).map(key => object[key])
   ```
 
+* ES2017
+
+  ```javascript
+  Object.values(object)
+  ```
+
 #### Create a new object with the given prototype and properties
 
 * Underscore
